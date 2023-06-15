@@ -1,0 +1,39 @@
+@use '/src/Style/Abstract/Color' as *;
+.header {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 100%;
+        a:first-child {
+            display: flex;
+            width: 100%;
+            max-width: min(40vw, 500px);
+            img:first-child { // Logo
+                width: 70%;
+            }
+            img:last-child { // Logo
+                width: 30%;
+            }
+        }
+        ul {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            li {
+                width: max-content;
+                margin: auto 30px auto 0;
+                font-size: min(5vw, 20px);
+                a {
+                    text-decoration: none;
+                    color: $Link-Color;
+                }
+            }
+            li:last-child {
+                margin-right: 10px;
+            }
+        }
+    }
+}
