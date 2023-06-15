@@ -4,9 +4,7 @@ import PublicRouter from './Routeur/index'
 
 const App = () => {
   return (
-    <div>
         <PublicRouter />
-    </div>
   );
 };
 
