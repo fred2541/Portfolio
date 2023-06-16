@@ -15,7 +15,6 @@ import Home from "../Pages/home";
 
 const PublicRouter = () => {
   return (
-      // <div className="App">
         <Router>
           <Header />
           <Routes>
@@ -26,7 +25,6 @@ const PublicRouter = () => {
           </Routes>
           <Footer />
         </Router>
-      // </div>
   );
 };
 
