@@ -28,3 +28,17 @@ a {
 .active {
     text-decoration-line: underline;
 }
+
+section {
+    height: fit-content;
+    max-width: 1400px;
+    margin: 10px min(2vw, 40px) 10px min(2vw, 40px);
+    padding: 0 20px 0px 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    h2 {
+      display: flex;
+      justify-content: center;
+    }
+  }

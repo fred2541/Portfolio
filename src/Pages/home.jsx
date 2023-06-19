@@ -25,7 +25,7 @@ function Home() {
 
     background.style.minHeight = "calc(100vh - " + headerHeigth + "px)";
     hero.style.minHeight = "calc( 100vh - " + headerHeigth + "px )";
-    
+
     document.querySelector("header").style.height = headerHeigth + "px";
   }, [headerHeigth]);
 
@@ -72,21 +72,46 @@ function Home() {
       </div>
       <section>
         <h2>Mes compétences:</h2>
-        <p>
-          rger
-        </p>
-        <p>
-          regr
-        </p>
-        <p>
-          rgerhg
-        </p>
-        <p>
-          rhg
-        </p>
-        <p>
-          eqrh
-        </p>
+        <div>
+          <div className="front"></div>
+          <div>
+            <ul>
+              <li>HTML5 et CSS3</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Débogage</li>
+              <li>SEO et accessibilité</li>
+              <li>Git/GitHub</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div className="back"></div>
+          <div>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PHP</li>
+              <li>MySQL/MariaDB</li>
+              <li>MongoDB</li>
+              <li>API REST</li>
+              <li>Débogage</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div className="tool"></div>
+          <div>
+          <ul>
+              <li>HAProxy</li>
+              <li>Apache</li>
+              <li>VS Code</li>
+              <li>Sublime Text</li>
+              <li>Réplication Asynchrone FS</li>
+              <li>Réplication Synchrone MariaDB</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   );
