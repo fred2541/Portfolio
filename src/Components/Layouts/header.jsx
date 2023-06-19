@@ -8,13 +8,16 @@ function Header () {
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   });
 
   useEffect(() => { // Adjust Logo in JS for no MediaQuery in CSS
     const LogoAile = document.querySelector("nav > a > img:last-child");
     const LogoText = document.querySelector("nav > a > img:first-child");
     windowWidth < 450 ? LogoAile.style.display = 'none' : LogoAile.style.display = 'block';
-    windowWidth < 450 ? LogoText.style.width = '100%' : LogoAile.style.width = '70%';
+    windowWidth < 450 ? LogoText.style.width = '100%' : LogoText.style.width = '70%';
   }, [windowWidth]);
 
   return (

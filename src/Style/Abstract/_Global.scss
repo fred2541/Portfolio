@@ -1,0 +1,30 @@
+@use '/src/Style/Abstract/Color' as *;
+$bodyPaddingRightAndLeft: 20px;
+$bodyPaddingTop: 10px;
+
+@font-face {
+    font-family: 'Zangezi';
+    src: url('../../Assets/Fonts/5f02286697a154a56f5d05c7_Zangezi07-Regular.woff') format('woff');
+    font-style: normal;
+    font-display: auto;
+  }
+
+body {
+    padding: 0 $bodyPaddingRightAndLeft 0 $bodyPaddingRightAndLeft;
+    font-family: 'Zangezi',sans-serif;
+    font-size: 20px;
+    color: $Link-Color;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration-line: underline;
+}

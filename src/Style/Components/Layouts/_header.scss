@@ -1,14 +1,25 @@
+@use '/src/Style/Abstract/Global' as *;
 @use '/src/Style/Abstract/Color' as *;
 .header {
     .nav {
+        z-index: 1000;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        padding-top: $bodyPaddingTop;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         box-sizing: border-box;
-        width: 100%;
+        width: calc(100% - ($bodyPaddingRightAndLeft + $bodyPaddingRightAndLeft));
         a:first-child {
             display: flex;
+            box-sizing: border-box;
             width: 100%;
             max-width: min(40vw, 500px);
+            img {
+                height: fit-content;
+            }
             img:first-child { // Logo
                 width: 70%;
             }
@@ -27,7 +38,6 @@
                 margin: auto min(4vw, 30px) auto 0;
                 font-size: min(4vw, 20px);
                 a {
-                    text-decoration: none;
                     color: $Link-Color;
                 }
             }
