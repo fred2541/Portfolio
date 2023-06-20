@@ -1,33 +1,8 @@
-import { useEffect, useState } from "react";
+import { useHeaderGetSize, useHeaderUpdate } from "../Components/Hooks/HeaderSize";
 
 function Home() {
-  const [headerHeigth, setheaderHeigth] = useState(0);
-
-  useEffect(() => {
-    // init header heigth
-    setheaderHeigth(document.querySelector("nav").clientHeight);
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () =>
-      setheaderHeigth(document.querySelector("nav").clientHeight);
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("load", handleResize); // Adjust size after full load of page
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("load", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    const background = document.querySelector(".background");
-    const hero = document.querySelector(".hero");
-
-    background.style.minHeight = "calc(100vh - " + headerHeigth + "px)";
-    hero.style.minHeight = "calc( 100vh - " + headerHeigth + "px )";
-
-    document.querySelector("header").style.height = headerHeigth + "px";
-  }, [headerHeigth]);
+  const headerHeight = useHeaderGetSize();
+  useHeaderUpdate(headerHeight);
 
   return (
     <div>
@@ -70,7 +45,7 @@ function Home() {
           </p>
         </section>
       </div>
-      <section>
+      <section className="skill">
         <h2>Mes compétences:</h2>
         <div>
           <div className="front"></div>

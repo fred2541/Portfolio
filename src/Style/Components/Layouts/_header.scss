@@ -23,7 +23,7 @@
             img:first-child { // Logo
                 width: 70%;
             }
-            img:last-child { // Logo
+            img:nth-child(2) { // Logo
                 width: 30%;
             }
         }

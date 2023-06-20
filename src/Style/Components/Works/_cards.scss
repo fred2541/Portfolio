@@ -1,0 +1,16 @@
+.gallery > div {
+  display: block;
+  break-inside: avoid;
+}
+div > article {
+  position: relative;
+  figcaption {
+    position: absolute;
+    top: 30px;
+    // color: black;
+    text-shadow: #FC0 1px 0 10px;
+  }
+  img {
+    width: 100%;
+  }
+}

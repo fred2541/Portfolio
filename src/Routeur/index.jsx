@@ -7,11 +7,12 @@ import Header from "../Components/Layouts/header";
 import Footer from "../Components/Layouts/footer";
 
 import Home from "../Pages/home";
+import Portfolio from "../Pages/portfolio";
 // import FicheLogement from "../pages/fiche-logement";
 // import APropos from "../pages/a-propos";
 // import Error404 from "../pages/404";
 
-
+// https://www.framer.com/motion/
 
 const PublicRouter = () => {
   return (
@@ -19,7 +20,7 @@ const PublicRouter = () => {
           <Header />
           <Routes>
             <Route exact path="/" Component={Home}></Route>
-            {/* <Route path="/logement/:id" Component={FicheLogement}></Route> */}
+            <Route path="/portfolio" Component={Portfolio}></Route>
             {/* <Route path="/about" Component={APropos}></Route> */}
             {/* <Route path="*" Component={Error404}></Route> */}
           </Routes>
