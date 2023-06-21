@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Cards from "./cards";
+import Masonry from "react-masonry-css";
 
 const Works = () => {
   const [works, setWorks] = useState(null);
@@ -30,11 +31,23 @@ const Works = () => {
     );
   }
 
+  const breakpointColumnsObj = {
+    default: 3,
+    1000: 2,
+    700: 1
+  };
+
   return !isLoading ? (
     <div className="gallery">
-      {works.map((work) => (
-        <Cards key={work.id} dataWork={work} />
+      <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column"
+      >
+      {works.map((work, index) => (
+        <Cards key={index} dataWork={work} index={index}/>
       ))}
+      </Masonry>
     </div>
   ) : (
     <div className="gallery">Chargement des projets en cours ...</div>

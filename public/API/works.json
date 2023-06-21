@@ -1,7 +1,28 @@
 [
 	{
-		"id": "c67ab8a7",
+		"title": "Au Bonheur de Tao",
+		"type": "Site vitrine",
+		"cover": "/Assets/Images/ScreenProjet/AuBonheurdeTao/1.png",
+		"pictures": [
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+		],
+		"mission": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
+		"realisation": "5",
+		"url": "https://www.au-bonheur-de-tao.fr/",
+		"tags": [
+			"HTML",
+			"CSS",
+			"PHP",
+			"API"
+		]
+	},
+	{
 		"title": "Booki",
+		"type": "Site vitrine",
 		"cover": "/Assets/Images/ScreenProjet/Booki/Capture d’écran 2023-06-20 à 12.53.56.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
@@ -10,27 +31,16 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
 		],
-		"description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
-		"host": {
-			"name": "Nathalie Jean",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
-		},
-		"rating": "5",
-		"location": "Ile de France - Paris 17e",
-		"equipments": [
-			"Équipements de base",
-			"Micro-Ondes",
-			"Douche italienne",
-			"Frigo",
-			"WIFI"
-		],
+		"mission": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
+		"realisation": "5",
+		"url": "https://fred2541.github.io/P2/",
 		"tags": [
-			"Batignolle",
-			"Montmartre"
+			"HTML",
+			"CSS",
+			"Github"
 		]
 	},
 	{
-		"id": "b9123946",
 		"title": "Sophie Bluel",
 		"cover": "/Assets/Images/ScreenProjet/BluelSophie/Capture d’écran 2023-06-20 à 13.55.35.png",
 		"pictures": [
@@ -41,29 +51,19 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
 		],
-		"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
-		"host": {
-			"name": "Della Case",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
-		},
-		"rating": "4",
-		"location": "Ile de France - Paris 10e",
-		"equipments": [
-			"Parking",
-			"Sèche Cheveux",
-			"Machine à laver",
-			"Wi-fi",
-			"Cuisine équipée",
-			"Télévision"
-		],
+		"mission": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+		"realisation": "4",
+		"url": "https://fred2541.github.io/P2/",
 		"tags": [
-			"Canal Saint Martin",
-			"République",
-			"Appartement"
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Figma",
+			"Github",
+			"Kanban"
 		]
 	},
 	{
-		"id": "46d188c5",
 		"title": "Nina Carducci",
 		"cover": "/Assets/Images/ScreenProjet/CarducciNina/Capture d’écran 2023-06-20 à 13.59.35.png",
 		"pictures": [
@@ -72,27 +72,19 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-4.jpg"
 		],
-		"description": "À seulement deux pas des Buttes Chaumont, venez découvrir Paris dans ce studio tout équipé. Entièrement équipé pour votre confort et élégamment décoré, il vous permettra de vivre comme un Parisien le temps de votre séjour.",
-		"host": {
-			"name": "Franck Maher",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
-		},
-		"rating": "3",
-		"location": "Ile de France - Paris 20e",
-		"equipments": [
-			"Wi-fi",
-			"Cuisine équipée",
-			"Télévision",
-			"Sèche Cheveux"
-		],
+		"mission": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+		"realisation": "4",
+		"url": "https://fred2541.github.io/P2/",
 		"tags": [
-			"Buttes Chaumont",
-			"Laumière",
-			"Studio"
+			"JavaScript",
+			"SEO",
+			"HTML",
+			"CSS",
+			"Github",
+			"Schema.org"
 		]
 	},
 	{
-		"id": "7af00cd6",
 		"title": "Kasa",
 		"cover": "/Assets/Images/ScreenProjet/Kasa/Capture d’écran 2023-06-20 à 14.01.50.png",
 		"pictures": [
@@ -101,29 +93,18 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
 		],
-		"description": "Venez découvrir Paris en séjournant dans ce nid douillet au coeur du 11ème. La vue sur le parc résidentiel saura vous reposer de vos longues journées de tourisme dans la capitale française. Et pour les plus fêtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de découvrir la night-life parisienne à seulement 5 minutes de l'appartement.",
-		"host": {
-			"name": "Della Case",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
-		},
-		"rating": "3",
-		"location": "Ile de France - Paris 11e",
-		"equipments": [
-			"Micro-Ondes",
-			"Wi-fi",
-			"Chambre Séparée",
-			"Climatisation",
-			"Télévision"
-		],
+		"mission": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+		"realisation": "4",
+		"url": "https://fred2541.github.io/P2/",
 		"tags": [
-			"Parmentier",
-			"Marais",
-			"Parc",
-			"Night Life"
+			"React.js",
+			"Figma",
+			"JavaScript",
+			"JSON",
+			"Github"
 		]
 	},
 	{
-		"id": "0979876d",
 		"title": "Mon Vieux Grimoire",
 		"cover": "/Assets/Images/ScreenProjet/MonVieuxGrimoire/Capture d’écran 2023-06-20 à 14.14.08.png",
 		"pictures": [
@@ -134,27 +115,21 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-6.jpg"
 		],
-		"description": "Ce loft entièrement rénové, et équipé de meubles de luxe saura vous séduire. Idéalement situé dans le 10ème arrondissement, vous déplacer dans Paris sera un véritable jeu d'enfant.",
-		"host": {
-			"name": "Franck Maher",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
-		},
-		"rating": "5",
-		"location": "Ile de France - Paris 10e",
-		"equipments": [
-			"Frigo Américain",
-			"Sèche Cheveux",
-			"Wi-fi",
-			"Chambre Séparée",
-			"Parking"
-		],
+		"mission": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+		"realisation": "4",
+		"url": "https://fred2541.github.io/P2/",
 		"tags": [
-			"Goncourt",
-			"Proche commerces"
+			"Node.JS",
+			"Express.js",
+			"MongoDB",
+			"Mongoose",
+			"Multer",
+			"Sharp",
+			"JWT",
+			"Github"
 		]
 	},
 	{
-		"id": "0979876b",
 		"title": "Mon Vieux Grimoire",
 		"cover": "/Assets/Images/ScreenProjet/MonVieuxGrimoire/Capture d’écran 2023-06-20 à 14.14.08.png",
 		"pictures": [
@@ -165,23 +140,13 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-6.jpg"
 		],
-		"description": "Ce loft entièrement rénové, et équipé de meubles de luxe saura vous séduire. Idéalement situé dans le 10ème arrondissement, vous déplacer dans Paris sera un véritable jeu d'enfant.",
-		"host": {
-			"name": "Franck Maher",
-			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-2.jpg"
-		},
-		"rating": "5",
-		"location": "Ile de France - Paris 10e",
-		"equipments": [
-			"Frigo Américain",
-			"Sèche Cheveux",
-			"Wi-fi",
-			"Chambre Séparée",
-			"Parking"
-		],
+		"mission": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+		"realisation": "4",
+		"url": "https://fred2541.github.io/P2/",
 		"tags": [
-			"Goncourt",
-			"Proche commerces"
+			"Canal Saint Martin",
+			"République",
+			"Appartement"
 		]
 	}
 ]

@@ -1,16 +1,109 @@
+@use "/src/Style/Abstract/Color" as *;
+$cornerSpace: 10px;
+$timeTransition: 1.5s;
 .gallery > div {
-  display: block;
-  break-inside: avoid;
+  // display: block;
+  // break-inside: avoid;
 }
 div > article {
   position: relative;
+  border: 2px solid $Link-Color;
+  border-radius: 33px;
+  margin-bottom: 10px;
+  figcaption,
+  .svgCorner {
+    transition: opacity $timeTransition ease;
+  }
   figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 30px;
-    // color: black;
-    text-shadow: #FC0 1px 0 10px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-shadow: #fc0 1px 0 10px;
+    background-color: rgba(255, 255, 255, 0.705);
+    z-index: 1;
+    width: fit-content;
+    margin: auto;
+    padding: 0 10px 0 10px;
+    border-radius: 30px;
+    max-width: 80%;
+    div:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px;
+      p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+      p:not(:first-child) {
+        margin-left: 10px; 
+    }
+    }
   }
   img {
+    display: block;
     width: 100%;
+    border-radius: 30px;
   }
+  .svgCorner {
+    opacity: 0;
+  }
+  &:hover {
+    background: $Link-Color;
+    figcaption {
+      opacity: 1;
+    }
+    .svgCorner {
+      opacity: 1;
+      background-color: $Link-Color;
+      mask-image: url("/Assets/Icons/angle-2-svgrepo-com.svg");
+      mask-size: cover;
+      width: 40px;
+      height: 40px;
+    }
+    .svgCornerBL {
+      position: absolute;
+      bottom: $cornerSpace;
+      left: $cornerSpace;
+      transform: rotate(90deg);
+    }
+    .svgCornerBR {
+      position: absolute;
+      bottom: $cornerSpace;
+      right: $cornerSpace;
+    }
+    .svgCornerTL {
+      position: absolute;
+      top: $cornerSpace;
+      right: $cornerSpace;
+      transform: rotate(270deg);
+    }
+    .svgCornerTR {
+      position: absolute;
+      top: $cornerSpace;
+      left: $cornerSpace;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+div > article:after {
+  border-radius: 33px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(102, 102, 243, 0.3);
+  opacity: 0;
+  transition: opacity $timeTransition ease-in-out;
+}
+article:hover::after {
+  opacity: 1;
 }

@@ -3,7 +3,7 @@ import { useState } from "react";
 
 Modal.setAppElement("#root"); // Set root element to Modal for accesibility
 
-const Cards = ({ dataWork }) => {
+const Cards = ({ dataWork , index}) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -19,9 +19,25 @@ const Cards = ({ dataWork }) => {
     <div>
       <article onClick={openModal}>
         <img src={dataWork.cover} alt=""></img>
-        <figcaption>{dataWork.title}</figcaption>
+        <figcaption>
+          <p>{dataWork.title}</p>
+          <p>{dataWork.type}</p>
+          <div>
+            {dataWork.tags.map((tags) => (
+              <p key={tags}>{tags}</p>
+            ))}
+          </div>
+        </figcaption>
+        <div className="svgCorner svgCornerTL"></div>
+        <div className="svgCorner svgCornerTR"></div>
+        <div className="svgCorner svgCornerBL"></div>
+        <div className="svgCorner svgCornerBR"></div>
       </article>
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} contentLabel="Exemple Modale">
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Exemple Modale"
+      >
         <h2>{dataWork.title}Ceci est une modale</h2>
         <p>Bienvenue dans la modale!</p>
         <button onClick={closeModal}>Fermer la modale</button>
