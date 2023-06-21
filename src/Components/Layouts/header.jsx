@@ -10,9 +10,8 @@ function Header () {
   useEffect(() => {
     const unsubscribe = scrollY.on("change", () => {
       controls.start({
-        scale: [1, 0.8, 1.1, 0.8, 1],
-        rotate: [360, 240, 60, 30, 0],
-        transition: { duration: 0.5 }
+        transform: ["skewX(0deg)", "skewX(20deg)", "skewX(0deg)", "skewX(40deg)", "skewX(0deg)"],
+        transition: { duration: 1, times: [0, 0.25, 0.5, 0.75, 1]}
       });
     });
 
