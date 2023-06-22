@@ -1,10 +1,10 @@
 @use "/src/Style/Abstract/Color" as *;
 $cornerSpace: 10px;
 $timeTransition: 1.5s;
-.gallery > div {
-  // display: block;
-  // break-inside: avoid;
-}
+// .gallery > div {
+//   // display: block;
+//   // break-inside: avoid;
+// }
 div > article {
   position: relative;
   border: 2px solid $Link-Color;
