@@ -1,0 +1,97 @@
+@use '/src/Style/Abstract/Color' as *;
+
+.containerModal {
+    font-size: min(10vw, 17px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    div:first-child {
+        span:not(.tags) {
+            text-decoration: underline;
+        }
+        .link {
+            margin-top: 10px;
+            a {
+                text-decoration: none;
+                color: $Link-Color;
+            }
+        }
+    }
+    div {
+        P {
+            margin: 0 0 5px 0;
+        }
+        label > p {
+            text-decoration: none;
+            padding: 5px 0 0 10px;
+
+        }
+        label:last-of-type > p {
+            margin-bottom: 10px;
+        }
+        overflow: hidden;
+        box-sizing: border-box;
+        width: calc(49% - 10px); // adjust for margin!
+        min-width: calc(49% - 10px);
+        height: 49%;
+        max-height: 49%;
+        // padding: 5px;
+        margin: 5px;
+        &:not(:first-child){
+            border-radius: 30px;
+            border: 2px solid $Link-Color-Light;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        transition: 0.3s;
+        @media all and (max-width: 1000px) {
+            width: 100%;
+            height: initial;
+            max-height: initial;
+        }
+        img {
+            width: 100%;            
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        &:hover:not(:first-child) {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+    div:nth-of-type(3):last-of-type { // only 3° div and the last !
+        width: calc(99% - 10px);
+    }
+}
+
+.containerTags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 10px 3px 10px;
+    margin: 0 10px 5px 0;
+    border-radius: 20px;
+    background-color: $Link-Color;
+    color: white;
+}
+
+.containerClose {
+    position: relative;
+    float: right;
+    span {
+        .close {
+            cursor: pointer;
+            display: flex;
+            position: fixed;
+            transform: translateX(-20px);
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            mask-image: url("/Assets/Icons/close-svgrepo-com.svg");
+            mask-size: cover;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 @use '/src/Style/Abstract/Color' as *;
+$timeScale: 1s;
 
 #root > div {
   // flex: 1;
@@ -35,6 +36,11 @@ div > .skill { // Section compétences
   align-items: center;
   > div { // Bloc front, back, tool
     display: flex;
+    animation: scale-down $timeScale forwards;
+    &:hover {
+      transition-timing-function: ease-in-out;
+      animation: scale-up $timeScale forwards;
+    }
     @media screen and (max-width: 700px) {
       flex-direction: column;
       align-items: center;
@@ -73,3 +79,21 @@ div > .skill > div > div:last-child {
   }
 }} 
 
+
+ @keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes scale-down {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

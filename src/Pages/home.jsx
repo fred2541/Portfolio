@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
       <div className="hero">
-        <div className="background"></div>
+        <div className="background accueil"></div>
         <section>
           <h2>A propos de moi:</h2>
           <p>

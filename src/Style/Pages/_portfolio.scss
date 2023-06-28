@@ -1,0 +1,14 @@
+.portfolio { // for portfolio page => use the same css from HomePage
+                // Just change the background url !
+    background-image: url("/Assets/Images/Fond2.png");
+}
+
+// disable pointer event for disable hover effect of article
+.disable-mouse-events {
+    pointer-events: none;
+  }
+  
+  .ReactModalPortal {
+    pointer-events: all; // Enable pointer-event in Modal !
+    display: flex;
+  }

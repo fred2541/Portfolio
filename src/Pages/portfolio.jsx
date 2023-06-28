@@ -8,7 +8,7 @@ function Portfolio() {
     return (
         <div>
         <div className="hero">
-          <div className="background"></div>
+          <div className="background portfolio"></div>
           <section>
             <h2>Mes réalisations:</h2>
             <p>
