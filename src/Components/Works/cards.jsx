@@ -5,6 +5,10 @@ Modal.setAppElement("#root"); // Set root element to Modal for accesibility
 
 const Cards = ({ dataWork, index }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const mobileImageUrl = dataWork.cover.replace(/(\.[\w\d_-]+)$/i, '_mobile$1'); // Add _mobile for mobile file
+  const pictureMobile0 = dataWork?.pictures?.[0]?.replace(/(\.[\w\d_-]+)$/i, '_mobile$1');
+  const pictureMobile1 = dataWork?.pictures?.[1]?.replace(/(\.[\w\d_-]+)$/i, '_mobile$1');
+  const pictureMobile2 = dataWork?.pictures?.[2]?.replace(/(\.[\w\d_-]+)$/i, '_mobile$1');
 
   // Custom Style for modal
   const customStyles = {
@@ -27,7 +31,7 @@ const Cards = ({ dataWork, index }) => {
   return (
     <div>
       <article onClick={openModal}>
-        <img src={dataWork.cover} alt=""></img>
+        <img loading="lazy" src={dataWork.cover} srcSet={mobileImageUrl + " 450w"} sizes="90vw" alt=""></img>
         <figcaption>
           <p>{dataWork.title}</p>
           <p>{dataWork.type}</p>
@@ -98,20 +102,29 @@ const Cards = ({ dataWork, index }) => {
           </div>
           <div>
             <img
+              loading="lazy"
               src={dataWork.pictures[0]}
+              srcSet={pictureMobile0 + " 450w"}
+              sizes="50vw"
               alt={"aperçu du projet" + dataWork.title}
             ></img>
           </div>
           <div>
             <img
+              loading="lazy"
               src={dataWork.pictures[1]}
+              srcSet={pictureMobile1 + " 450w"}
+              sizes="50vw"
               alt={"aperçu du projet" + dataWork.title}
             ></img>
           </div>
           {dataWork.pictures[2] && (
             <div>
               <img
+                loading="lazy"
                 src={dataWork.pictures[2]}
+                srcSet={pictureMobile2 + " 450w"}
+                sizes="50vw"
                 alt={"aperçu du projet" + dataWork.title}
               />
             </div>
