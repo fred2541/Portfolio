@@ -2,11 +2,11 @@
 	{
 		"title": "Au Bonheur de Tao",
 		"type": "Site vitrine",
-		"cover": "/Assets/Images/ScreenProjet/AuBonheurdeTao/1.png",
+		"cover": "/Assets/Images/ScreenProjet/AuBonheurdeTao/1.webp",
 		"pictures": [
-			"/Assets/Images/ScreenProjet/AuBonheurdeTao/2.png",
-			"/Assets/Images/ScreenProjet/AuBonheurdeTao/3.png",
-			"/Assets/Images/ScreenProjet/AuBonheurdeTao/4.png"
+			"/Assets/Images/ScreenProjet/AuBonheurdeTao/2.webp",
+			"/Assets/Images/ScreenProjet/AuBonheurdeTao/3.webp",
+			"/Assets/Images/ScreenProjet/AuBonheurdeTao/4.webp"
 		],
 		"date": "Avril 2023",
 		"mission": "Réalisation d'un site vitrine pour un gîte/chambres d'hôtes. Logo est code couleurs fournie par le client. Gestion des calendriers de réservations.",
@@ -23,10 +23,10 @@
 	{
 		"title": "Portfolio Etudiant",
 		"type": "Portfolio",
-		"cover": "/Assets/Images/ScreenProjet/Portfolio_Etudiant/1.png",
+		"cover": "/Assets/Images/ScreenProjet/Portfolio_Etudiant/1.webp",
 		"pictures": [
-			"/Assets/Images/ScreenProjet/Portfolio_Etudiant/1.png",
-			"/Assets/Images/ScreenProjet/Portfolio_Etudiant/2.png"
+			"/Assets/Images/ScreenProjet/Portfolio_Etudiant/1.webp",
+			"/Assets/Images/ScreenProjet/Portfolio_Etudiant/2.webp"
 		],
 		"date": "Mai 2023",
 		"mission": "Un étudiant en architecture souhaitait convertir son portfolio PDF en un site web pour postuler à une école d'architecture.",
@@ -41,10 +41,10 @@
 	},
 	{
 		"title": "Sophie Bluel",
-		"cover": "/Assets/Images/ScreenProjet/BluelSophie/1.png",
+		"cover": "/Assets/Images/ScreenProjet/BluelSophie/1.webp",
 		"pictures": [
-			"/Assets/Images/ScreenProjet/BluelSophie/2.png",
-			"/Assets/Images/ScreenProjet/BluelSophie/3.png"
+			"/Assets/Images/ScreenProjet/BluelSophie/2.webp",
+			"/Assets/Images/ScreenProjet/BluelSophie/3.webp"
 		],
 		"date": "Février 2023",
 		"mission": "Conception de la présentation des travaux, création de la page de connexion administrateur et d'une modale d'upload pour un portfolio d'architecte d'intérieur.",
@@ -63,11 +63,11 @@
 	{
 		"title": "Booki",
 		"type": "Site vitrine",
-		"cover": "/Assets/Images/ScreenProjet/Booki/1.png",
+		"cover": "/Assets/Images/ScreenProjet/Booki/1.webp",
 		"pictures": [
-			"/Assets/Images/ScreenProjet/Booki/2.png",
-			"/Assets/Images/ScreenProjet/Booki/3.png",
-			"/Assets/Images/ScreenProjet/Booki/4.png"
+			"/Assets/Images/ScreenProjet/Booki/2.webp",
+			"/Assets/Images/ScreenProjet/Booki/3.webp",
+			"/Assets/Images/ScreenProjet/Booki/4.webp"
 		],
 		"date": "Février 2023",
 		"mission": "Intégration de l'interface web de Booki, un site de réservation d'hébergements et d'activités, en respectant les maquettes et spécifications techniques fournies, à travers l'édition et la versioning du code HTML et CSS.",
@@ -82,10 +82,10 @@
 	},
 	{
 		"title": "Nina Carducci",
-		"cover": "/Assets/Images/ScreenProjet/CarducciNina/1.png",
+		"cover": "/Assets/Images/ScreenProjet/CarducciNina/1.webp",
 		"pictures": [
-			"/Assets/Images/ScreenProjet/CarducciNina/2.png",
-			"/Assets/Images/ScreenProjet/CarducciNina/3.png"
+			"/Assets/Images/ScreenProjet/CarducciNina/2.webp",
+			"/Assets/Images/ScreenProjet/CarducciNina/3.webp"
 		],
 		"date": "Avril 2023",
 		"mission": "Optimisation globale du site, axée sur les performances, le SEO, et l'accessibilité, l'ajout des métadonnées pour les réseaux sociaux, le référencement local, et la résolution de bugs spécifiques.",
@@ -103,11 +103,11 @@
 	},
 	{
 		"title": "Kasa",
-		"cover": "/Assets/Images/ScreenProjet/Kasa/1.png",
+		"cover": "/Assets/Images/ScreenProjet/Kasa/1.webp",
 		"pictures": [
-			"/Assets/Images/ScreenProjet/Kasa/2.png",
-			"/Assets/Images/ScreenProjet/Kasa/3.png",
-			"/Assets/Images/ScreenProjet/Kasa/4.png"
+			"/Assets/Images/ScreenProjet/Kasa/2.webp",
+			"/Assets/Images/ScreenProjet/Kasa/3.webp",
+			"/Assets/Images/ScreenProjet/Kasa/4.webp"
 		],
 		"date": "Mai 2023",
 		"mission": "La plateforme de location d'appartements Kasa a commandé une refonte totale de leur site, vieilli de 10 ans. Le nouveau site nécessite l'implémentation d'une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Le développement doit respecter les maquettes Figma fournies et les spécifications techniques de Kasa.",
@@ -124,10 +124,10 @@
 	},
 	{
 		"title": "Mon Vieux Grimoire",
-		"cover": "/Assets/Images/ScreenProjet/MonVieuxGrimoire/1.png",
+		"cover": "/Assets/Images/ScreenProjet/MonVieuxGrimoire/1.webp",
 		"pictures": [
-			"/Assets/Images/ScreenProjet/MonVieuxGrimoire/2.png",
-			"/Assets/Images/ScreenProjet/MonVieuxGrimoire/3.png"
+			"/Assets/Images/ScreenProjet/MonVieuxGrimoire/2.webp",
+			"/Assets/Images/ScreenProjet/MonVieuxGrimoire/3.webp"
 		],
 		"date": "Juin 2023",
 		"mission": "Réaliser le codage du BackEnd pour un site de notation de livres.",
