@@ -40,6 +40,26 @@
 		]
 	},
 	{
+		"title": "Cloud personnel",
+		"type": "Network",
+		"cover": "/Assets/Images/ScreenProjet/CloudPerso/1.webp",
+		"pictures": [
+			"/Assets/Images/ScreenProjet/CloudPerso/1.webp",
+			"/Assets/Images/ScreenProjet/CloudPerso/2.webp",
+			"/Assets/Images/ScreenProjet/CloudPerso/2.webp"
+		],
+		"date": "2019 - 2023",
+		"mission": "En 2019, après une défaillance sur un serveur dédié, et la perte de toutes les données qu'il contenait, j'ai pris la décision de sécuriser mon réseau et mes données.",
+		"realisation": "L'objectif est simple : tout doit, au minimum, être disponible en double et une tolérance à la panne doit être ajoutée.",
+		"url": "",
+		"source": "",
+		"tags": [
+			"HAProxy",
+			"Apache",
+			"Galera Cluster"
+		]
+	},
+	{
 		"title": "Sophie Bluel",
 		"cover": "/Assets/Images/ScreenProjet/BluelSophie/1.webp",
 		"pictures": [
