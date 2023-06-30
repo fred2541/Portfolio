@@ -26,8 +26,10 @@ export const useHeaderUpdate = (headerHeight) => {
     const background = document.querySelector(".background");
     const hero = document.querySelector(".hero");
 
-    background.style.minHeight = "calc(100vh - " + headerHeight + "px)";
-    hero.style.minHeight = "calc( 100vh - " + headerHeight + "px )";
+    if(background && hero) {
+      background.style.minHeight = "calc(100vh - " + headerHeight + "px)";
+      hero.style.minHeight = "calc( 100vh - " + headerHeight + "px )";
+    }
 
     document.querySelector("header").style.height = headerHeight + "px";
   }, [headerHeight]);

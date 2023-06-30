@@ -1,0 +1,91 @@
+@use '/src/Style/Abstract/Color' as *;
+
+.contact { // for portfolio page => use the same css from HomePage
+    // Just change the background url !
+background-image: initial;
+mask-image: initial;
+justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 20px;
+    border: 2px solid $Link-Color-Light;
+    border-radius: 20px;
+    > img {
+        height: auto;
+    }
+}
+.card {
+    h1 {
+        margin: 0;
+        padding: 15px 20px 0 20px;
+    }
+    h2 {
+        margin: 0;
+        padding: 10px 20px 0 20px;
+    }
+}
+
+.card > div:nth-child(2) {
+    display: flex;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.card > div:nth-child(3) { // .card-contacts
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 13px;
+}
+
+.card-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card-contacts > p {
+    display: flex;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+}
+
+.contacts {
+    display: flex;
+    background-color: $Link-Color;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.envelope {
+    mask-image: url("/Assets/Icons/mail-svgrepo-com.svg");
+    mask-size: cover;    
+}
+
+.phone {
+    mask-image: url("/Assets/Icons/phone-rotary-svgrepo-com.svg");
+    mask-size: cover;    
+}
+
+.pos {
+    mask-image: url("/Assets/Icons/position-location-svgrepo-com.svg");
+    mask-size: cover;    
+}
+
+.cardBackground {
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    // top: 50%;
+}
