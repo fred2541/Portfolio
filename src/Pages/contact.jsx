@@ -41,7 +41,7 @@ function Contact() {
               <i className="contacts phone"></i> 06.20.24.66.00
             </p>
             <p>
-              <i className="contacts pos"></i> France > Occitanie > Gard
+              <i className="contacts pos"></i> France &#62; Occitanie &#62; Gard
             </p>
           </div>
         </div>
