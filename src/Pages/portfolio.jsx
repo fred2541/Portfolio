@@ -1,9 +1,11 @@
 import { useHeaderGetSize, useHeaderUpdate } from "../Components/Hooks/HeaderSize";
+import { useTitlePage } from "../Components/Hooks/TitlePage";
 import Works from "../Components/Works/works";
 
 function Portfolio() {
   const headerHeight = useHeaderGetSize();
   useHeaderUpdate(headerHeight);
+  useTitlePage('Fred-Dev Portfolio');
   
     return (
         <div>

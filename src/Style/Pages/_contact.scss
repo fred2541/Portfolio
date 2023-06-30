@@ -25,10 +25,12 @@ justify-content: center;
     h1 {
         margin: 0;
         padding: 15px 20px 0 20px;
+        font-size: 30px;
     }
     h2 {
         margin: 0;
         padding: 10px 20px 0 20px;
+        font-size: 23px;
     }
 }
 
@@ -37,8 +39,13 @@ justify-content: center;
     @media screen and (max-width: 700px) {
         flex-direction: column;
         align-items: center;
-        font-size: 15px;
         margin-bottom: 20px;
+        h1 {
+            font-size: 23px;
+        }
+        h2 {
+            font-size: 18px;
+        }
     }
 }
 

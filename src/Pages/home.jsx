@@ -1,8 +1,10 @@
 import { useHeaderGetSize, useHeaderUpdate } from "../Components/Hooks/HeaderSize";
+import { useTitlePage } from "../Components/Hooks/TitlePage";
 
 function Home() {
   const headerHeight = useHeaderGetSize();
   useHeaderUpdate(headerHeight);
+  useTitlePage('Fred-Dev Accueil');
 
   return (
     <div>
