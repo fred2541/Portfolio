@@ -41,8 +41,8 @@ div > article {
         margin-bottom: 3px;
       }
       p:not(:first-child) {
-        margin-left: 10px; 
-    }
+        margin-left: 10px;
+      }
     }
   }
   img {
@@ -53,41 +53,43 @@ div > article {
   .svgCorner {
     opacity: 0;
   }
-  &:hover {
-    background: $Link-Color;
-    figcaption {
-      opacity: 1;
-    }
-    .svgCorner {
-      opacity: 1;
-      background-color: $Link-Color;
-      mask-image: url("/Assets/Icons/angle-2-svgrepo-com.svg");
-      mask-size: cover;
-      width: 40px;
-      height: 40px;
-    }
-    .svgCornerBL {
-      position: absolute;
-      bottom: $cornerSpace;
-      left: $cornerSpace;
-      transform: rotate(90deg);
-    }
-    .svgCornerBR {
-      position: absolute;
-      bottom: $cornerSpace;
-      right: $cornerSpace;
-    }
-    .svgCornerTL {
-      position: absolute;
-      top: $cornerSpace;
-      right: $cornerSpace;
-      transform: rotate(270deg);
-    }
-    .svgCornerTR {
-      position: absolute;
-      top: $cornerSpace;
-      left: $cornerSpace;
-      transform: rotate(180deg);
+  @media (hover: hover) and (pointer: fine) { // Disable hover un touch screen
+    &:hover {
+      background: $Link-Color;
+      figcaption {
+        opacity: 1;
+      }
+      .svgCorner {
+        opacity: 1;
+        background-color: $Link-Color;
+        mask-image: url("/Assets/Icons/angle-2-svgrepo-com.svg");
+        mask-size: cover;
+        width: 40px;
+        height: 40px;
+      }
+      .svgCornerBL {
+        position: absolute;
+        bottom: $cornerSpace;
+        left: $cornerSpace;
+        transform: rotate(90deg);
+      }
+      .svgCornerBR {
+        position: absolute;
+        bottom: $cornerSpace;
+        right: $cornerSpace;
+      }
+      .svgCornerTL {
+        position: absolute;
+        top: $cornerSpace;
+        right: $cornerSpace;
+        transform: rotate(270deg);
+      }
+      .svgCornerTR {
+        position: absolute;
+        top: $cornerSpace;
+        left: $cornerSpace;
+        transform: rotate(180deg);
+      }
     }
   }
 }
