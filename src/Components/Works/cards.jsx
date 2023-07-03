@@ -20,10 +20,12 @@ const Cards = ({ dataWork, index }) => {
   const openModal = () => {
     document.body.classList.add("disable-mouse-events");
     document.querySelector("header").style.display = "none";
+    document.body.style.overflow = 'hidden';
     setModalIsOpen(true);
   };
 
   const closeModal = () => {
+    document.body.style.overflow = 'unset';
     document.body.classList.remove("disable-mouse-events");
     document.querySelector("header").style.display = "initial";
     setModalIsOpen(false);

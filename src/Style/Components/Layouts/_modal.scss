@@ -44,6 +44,9 @@
             border: 2px solid $Link-Color-Light;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         }
+        &:first-child {
+            overflow: auto; // Add scroll if needed fot text presentation
+        }
         transition: 0.3s;
         @media all and (max-width: 1000px) {
             width: 100%;

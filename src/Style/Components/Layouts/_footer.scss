@@ -47,6 +47,18 @@ footer::before {
     rgba(255, 255, 255, 0.5) 70%,
     rgba(0, 0, 0, 0) 100%
   );
+  @media screen and (max-width: 600px) { // Adjust background for mobile
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(255, 255, 255, 0.3) 10%,
+      rgba(255, 255, 255, 0.8) 40%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 0.5) 90%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }
 
 @keyframes rotate-scale-up {
